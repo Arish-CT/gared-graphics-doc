@@ -1,9 +1,10 @@
+/* Gared Graphics brand colours (from the theme's assets/css/variables.css). */
 :root {
-    --var-primary: #007EA8;
-    --var-primary-dark: #00527C;
-    --var-secondary: #7bc2ea;
-    --var-dark: #313131;
-    --var-light: #ececec;
+    --var-primary: #8c0c42;      /* burgundy accent */
+    --var-primary-dark: #6a0932; /* darker burgundy for the sidebar header */
+    --var-secondary: #f2c9d8;    /* light burgundy: current page in the menu */
+    --var-dark: #231f20;         /* ink */
+    --var-light: #f7f6f5;        /* light grey */
 }
 
 .wy-side-nav-search {
@@ -33,4 +34,27 @@
 
 .wy-menu-vertical li.current ul {
     background-color: var(--var-light);
+}
+
+/* Screenshots: a light frame so white admin screens stand out from the page. */
+.wy-nav-content img {
+    border: 1px solid #ded9dc;
+    border-radius: 4px;
+}
+
+/* Numbered steps under a screenshot match its numbered markers. */
+.wy-nav-content ol li {
+    margin-bottom: 4px;
+}
+
+/* Field tables: wrap long cells instead of scrolling sideways. */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}
+
+/* Menu group headings ("What's on each page") in the light burgundy instead of the theme's blue. */
+.wy-menu-vertical p.caption,
+.wy-menu-vertical header {
+    color: var(--var-secondary);
 }
