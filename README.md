@@ -1,20 +1,13 @@
-# Documentation Template
+# Gared Graphics - WordPress Documentation
 
-Welcome to the project documentation template! This template is designed to help you effectively document your projects using MkDocs, a static site generator that’s geared towards project documentation.
+The client guide for the Gared Graphics WordPress site: how to edit pages and their sections, portfolio projects, blog posts, forms, images and site settings.
 
-## Getting Started
+Published with GitHub Pages: https://arish-ct.github.io/gared-graphics-doc/
 
-1. Installation: Ensure you have MkDocs installed, following this <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">guide</a>. You can install it via pip:
-   `pip install mkdocs`
+## Working on it
 
-2. On this repository, click on 'Use this template', then 'Create a new repository'.
-
-3. Clone the new repo into your computer and open the root folder in your IDE.
-
-4. Use the following command to run the MkDocs development server:
-   `mkdocs serve`
-
-5. Once the changes are ready, you can deploy using the command:
-   `mkdocs gh-deploy`
-
-6. To visit the page available online, go to your GitHub repository, then go to Settings->Pages and you should see the link. If it's not working, make sure your repository is set as public and that the branch selected for the live page is gh-pages.
+- Install MkDocs: `pip install mkdocs`
+- Preview with live reload: `mkdocs serve --livereload`, then open http://127.0.0.1:8000/
+- Pages are in `docs/` (Markdown), screenshots in `docs/img/`, the menu in `mkdocs.yml`, colours in `docs/style.css`.
+- Check before publishing: `mkdocs build --strict` (fails on broken links or missing images).
+- Publish: `mkdocs gh-deploy` (builds the site and pushes it to the `gh-pages` branch). The `site/` folder is a local build and isn't committed.

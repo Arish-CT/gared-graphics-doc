@@ -1,39 +1,48 @@
-# Welcome to PROJECT theme by Coalition Technologies documentation
+# Welcome to the Gared Graphics WordPress documentation
 
-## Developers info
+This documentation shows you how to update your website yourself: the text and photos on each page, your contact details, menus, portfolio projects, blog posts and the forms on the Contact page.
 
-* Base theme: Cornerstone 6.14.0
-* Node: 18.15.0
-* Command: stencil start
+Your site runs on **WordPress**, with a custom theme built by Coalition Technologies to match your design. Most of what you see can be changed from the WordPress dashboard without touching any code.
 
-## Project pages designed
-* [Homepage](home/)
-* [Category Page](category/)
-* [Product Page](product/)
-* [Static Page](static/)
-* [Mega Menu](menu/)
+## Logging in
 
-## Page Builder
-Page Builder allows you to customize the different style elements of your theme, like colors, text sizes, the number of featured products to show on the homepage, and more. You can use this to tailor your storefront so it more closely reflects your brand.
+1. Go to your website address followed by **/wp-admin**, for example `garedgraphics.com/wp-admin`.
+2. Enter the username and password you were given, then click **Log In**.
+3. You'll land on the **Dashboard**. The menu on the left takes you everywhere you need to go.
 
-In addition, you can drag and drop content onto pages, like text blocks, images, videos, banners, carousels, buttons, and blocks of custom HTML. This enables you to showcase your products in a way that is visually rich.
+!!! tip
+    While you're logged in and viewing your site, a dark bar at the top of every page gives you shortcuts such as **Edit Page** and **Customize**.
 
-To access Page Builder go to Storefront › Themes › Customize to launch Page Builder. You can also read more about the Page builder in this <a href="https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#using" target="_blank">documentation</a>.
+## Where things are
 
-![page-builder.png](img/page-builder.png)
+| In the left menu | What you change there |
+|---|---|
+| **Pages** | The content of Home, About Us, Services, Portfolio, Contact Us and the other pages (see [Editing pages](editing-pages.md)) |
+| **Posts** | Your blog articles and their categories (see [Blog posts](blog-posts.md)) |
+| **Portfolio** | Your portfolio projects and their categories (see [Portfolio projects](portfolio-projects.md)) |
+| **Media** | Every image and file you've uploaded (see [Images](images.md)) |
+| **Forms** | Messages and quote requests sent through the website's forms (see [Forms](forms.md)) |
+| **Appearance → Customize** | Logo, contact details, header, footer, social links and other site-wide settings (see [Site settings](site-settings.md)) |
+| **Appearance → Menus** | The links in the header and footer menus |
 
-Whenever we need to edit the site, we need to be in 'Design' mode. And whenever we need to test the site, we need to be in 'Preview' mode. You can also test on different screen sizes by clicking on the icons at the top of the Page Builder.
+## Please don't change
 
-![design-preview.png](img/design-preview.png)
+Some areas control how the site is built rather than what it says. Changing them can break the layout, so please leave them as they are, or ask us first:
 
-While editing the widgets in Design mode, sometimes they seem to break, but this is because the scripts stop running. If this happens, you can fix it by clicking on 'Save' in the top right corner of the Page Builder.
+- **ACF** (field groups): these define the editing fields for each section of your pages.
+- **Appearance → Themes**: switching theme would replace your site's design.
+- **Appearance → Customize → Additional CSS**: code that changes the site's styling.
+- **Plugins**: they power the forms, the editing fields and backups.
 
-After clicking on 'Save', you can click on 'Preview' to see the changes in action. If you want to see the changes on the live site, you need to click on 'Publish'.
+## In this documentation
 
-![discard-publish.png](img/discard-publish.png)
+- [Editing pages](editing-pages.md): how the page editor works, the page header, and the kinds of fields.
+- What's on each page: [Home](pages/home.md), [About Us](pages/about.md), [Services](pages/services.md), [Portfolio](pages/portfolio.md), [Contact Us](pages/contact.md).
+- [Portfolio projects](portfolio-projects.md): adding projects and their categories.
+- [Blog posts](blog-posts.md): writing posts, categories and comments.
+- [Forms](forms.md): reading messages and quote requests, and who gets the emails.
+- [Images](images.md): sizes, file names and alt text.
+- [Site settings](site-settings.md): logo, contact details, header and footer, social links, menus.
 
-## Custom Widgets
-Custom widgets are developed by Coalition Technologies according to the mockups.
-
-They can be used in the Page Builder. You can find them in the Page Builder under the Custom Widgets section.
-![custom-widgets.png](img/custom-widgets.png)
+!!! note "For developers"
+    Custom WordPress theme (*Gared Graphics*) with page sections built as ACF Pro blocks; field definitions are saved as JSON in the theme (`acf-json/`), so change them in code, not under ACF in the dashboard. Forms use Gravity Forms. Theme code is managed in its own git repository.

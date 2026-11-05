@@ -1,1 +1,4 @@
 .idea
+
+# Local build output; GitHub Pages is published from the gh-pages branch by mkdocs gh-deploy
+site/

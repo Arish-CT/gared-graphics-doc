@@ -1,12 +1,30 @@
-site_name: Project - CT
+site_name: Gared Graphics - WordPress Documentation
 nav:
-  - General: index.md
-  - Home: home.md
-  - Category: category.md
-  - Product: product.md
-  - Static: static.md
-  - Mega Menu: menu.md
-  - Other: other.md
-theme: readthedocs
+  - Welcome: index.md
+  - Editing pages: editing-pages.md
+  - What's on each page:
+      - Home: pages/home.md
+      - About Us: pages/about.md
+      - Services: pages/services.md
+      - Portfolio: pages/portfolio.md
+      - Contact Us: pages/contact.md
+  - Portfolio projects: portfolio-projects.md
+  - Blog posts: blog-posts.md
+  - Forms: forms.md
+  - Images: images.md
+  - Site settings: site-settings.md
+validation:
+  anchors: warn # with --strict, a link to a missing heading fails the build
+theme:
+  name: readthedocs
+  custom_dir: overrides
 extra_css:
   - style.css
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+plugins:
+  - search # listing plugins replaces the defaults, so search must stay in the list
+  - glightbox # click a screenshot to open it full size (mkdocs-glightbox)
